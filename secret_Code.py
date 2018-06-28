@@ -3,6 +3,7 @@ import asyncio
 import requests
 import random
 import string
+import os 
 from discord.ext import commands
 from discord.ext.commands import Bot
 bot = commands.Bot(command_prefix = '+')
@@ -11,6 +12,7 @@ bot.ver_Count = 1
 bot.code_count = 1
 bot.v_users = []
 
+TOKEN=os.environ['BOT_TOKEN']
 
 @bot.event
 async def on_ready():
@@ -98,4 +100,4 @@ async def get_Ver_users(ctx):
         user_Em.add_field(name='User {}'.format(i), value=bot.v_users[i])
     await bot.say(embed=user_Em)
 ####################################
-bot.run('NDYwOTUwNTEwMzM0MTE1ODQx.DhWjXQ.1clbMP2TemfKY6plf7IvGdFeT4I')
+bot.run(TOKEN)
