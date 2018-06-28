@@ -83,12 +83,12 @@ async def verify(ctx, user ,code):
 ##################Logging Info##################
 
 @bot.command(pass_context=True)
-@commands.has_role("dev_Log_aCess_65")
+@commands.has_role("RANK")
 async def get_c_count(ctx):
     await bot.say(bot.code_count)
 ####################################
 @bot.command(pass_context=True)
-@commands.has_role("dev_Log_aCess_65")
+@commands.has_role("RANK")
 async def get_Ver_count(ctx):
     await bot.say(bot.ver_Count)
 ######################################
