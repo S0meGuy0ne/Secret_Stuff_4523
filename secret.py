@@ -70,7 +70,7 @@ async def verify(ctx, user ,code):
                     bot.v_users.append(user_fmt)
                     print(data['Status'])
                 else:   
-                    await bot.send_message("Unable to verify user" +'{0.author.mention}'.format(ctx.message))
+                    await bot.say("Unable to verify user" +'{0.author.mention}'.format(ctx.message))
             else:
                 await bot.say('Code is invalid'+'{0.author.mention}'.format(ctx.message))
         else:
