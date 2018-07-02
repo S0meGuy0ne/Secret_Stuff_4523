@@ -66,4 +66,4 @@ async def verify(ctx, user):
           await bot.send_message(ctx.message.channel, '{0.author.mention}'.format(ctx.message) + 'Code not found in blurb')
     except discord.Forbidden:
         await bot.send_message(ctx.message.channel, '{0.author.mention}'.format(ctx.message) + 'Can not edit your information..You are too tall for me to reach')
-bot.run(TOEKN)
+bot.run(TOKEN)
