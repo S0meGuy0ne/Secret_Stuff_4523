@@ -31,7 +31,7 @@ async def helpverify(ctx):
     embed.add_field(name="Step2:", value='Copy the code and go on your brickplanet account setting', inline=False)
     embed.add_field(name="Step3:", value='Insert the code in your profile blurd ', inline=False)
     embed.add_field(name="Step4:", value='Go on the server you want to verify your self and say +verify <UserName>', inline=False)
-    embed,set_footer(text='For any bugs problems blame GreekSymbol#4686, in other words DM GreekSymbol#4686 and report it')    
+    embed.set_footer(text='For any bugs problems blame GreekSymbol#4686, in other words DM GreekSymbol#4686 and report it')    
     await bot.send_message(ctx.message.author, embed=embed)
 
 ##############################
