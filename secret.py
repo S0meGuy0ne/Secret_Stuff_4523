@@ -6,7 +6,7 @@ import string
 from discord.ext import commands
 from discord.ext.commands import Bot
 bot = commands.Bot(command_prefix = '+')
-
+TOKEN=os.environ['BOT_TOKEN']
 bot.ver_Count = 1
 bot.code_count = 1
 bot.v_users = []
