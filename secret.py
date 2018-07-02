@@ -3,6 +3,7 @@ import asyncio
 import requests
 import random
 import string
+import os
 from discord.ext import commands
 from discord.ext.commands import Bot
 bot = commands.Bot(command_prefix = '+')
